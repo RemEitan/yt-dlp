@@ -1,1 +1,5 @@
 yt-dlp -x --audio-format mp3 --parse-metadata "title:%(artist)s - %(title)s" --parse-meta "playlist_title:%(meta_album)s" --embed-meta --parse-metadata "playlist_index:%(track_number)s" --add-metadata --ppa "ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" --convert-thumbnails jpg --embed-thumbnail "your link"
+
+
+
+yt-dlp -x --audio-format mp3 --parse-metadata "title:%(artist)s - %(title)s" --embed-meta --add-metadata --ppa "ffmpeg: -c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" --convert-thumbnails jpg --embed-thumbnail "your link"
