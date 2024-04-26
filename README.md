@@ -7,3 +7,6 @@ artist
 album (please notice that the album name is the same name of the playlist(
 cover album 
 number of song in album/playlist
+
+please make sure you download yt-dlp and ffmpeg.
+to do so, easly download homebrew. then use command brew install ffmpeg/yt-dlp
